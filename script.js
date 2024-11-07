@@ -1,15 +1,11 @@
-// task 1
-let name = prompt('Enter your name')
-console.log(name)
+// Task 1
+const input = prompt("Enter date: ")
+const date1 = new Date(input)
+const dateFormatter = new Intl.DateTimeFormat('az', {dateStyle: 'long'})
+console.log(dateFormatter.format(date))
 
-// task 2
-let num1 = parseInt(prompt('number 1'))
-let num2 = parseInt(prompt('number 2'))
-console.log(num1 + num2)
-console.log(num1 - num2)
-console.log(num1 * num2)
-console.log(num1 / num2)
-
-// Task 3
-let num = 12345*98765
-console.log(num.toString()[5])
+// Task 2
+const num = prompt('Enter number of the month: ')
+const date2 = new Date()
+date.setMonth(num)
+console.log(date.toLocaleString('az', { month: 'long' }))
