@@ -1,11 +1,25 @@
-// Task 1
-const input = prompt("Enter date: ")
-const date1 = new Date(input)
-const dateFormatter = new Intl.DateTimeFormat('az', {dateStyle: 'long'})
-console.log(dateFormatter.format(date))
+// Task 3
+list = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const [first, second, ...rest] = list;
+console.log(first, second);
 
-// Task 2
-const num = prompt('Enter number of the month: ')
-const date2 = new Date()
-date.setMonth(num)
-console.log(date.toLocaleString('az', { month: 'long' }))
+// Task 4
+list = [];
+a = 0;
+while (a < 10) {
+  list = [...list, a];
+  a += 1;
+}
+console.log(list);
+console.log(Math.max(...list));
+
+// Task 5
+list = [];
+a = 0;
+while (a < 5) {
+  list = [...list, a];
+  a += 1;
+}
+console.log(list);
+list2 = list.map((i) => i * 2);
+console.log(list2, list == list2);
