@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 95vh;
+  width: 50%;
+  border: 5px red solid;
+  overflow: hidden;
+  position: relative;
+}
+
+.box {
+  position: absolute;
+  bottom: 10px;
+  width: 220px;
+  height: 25px;
+  background: green;
+  transition: 0.5s ease-in-out;
+}
+
+.box.left {
+  left: -50%;
+  transform: translateX(-50%);
+}
+
+.box.right {
+  right: -50%;
+  transform: translateX(50%);
+}
+
+.box.left.active {
+  left: 50%;
+}
+
+.box.right.active {
+  right: 50%;
+}
