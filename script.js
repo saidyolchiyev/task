@@ -9,6 +9,7 @@ while (a < count) {
   const $box = document.createElement("div");
   $box.classList.add("box", a % 2 == 0 ? "left" : "right");
   $box.style.bottom = `${bottomY}px`;
+  $box.innerText = a;
   $container.append($box);
   bottomY += 40;
 }
